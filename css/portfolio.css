@@ -392,6 +392,12 @@ a:hover {
   cursor: pointer;
 }
 
+main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -573,6 +579,9 @@ a:hover {
 }
 
 .header {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   position: fixed;
   z-index: 1;
   top: 0px;
@@ -1126,6 +1135,9 @@ a:hover {
 }
 
 .footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
   color: var(--light-text);
   font-family: "Roboto-Regular";
   font-size: 14px;
