@@ -16,7 +16,7 @@
 .activities__item-title{
     position: absolute;
     width: 100%;
-    bottom: 27px;
+    bottom: 0;
     padding-top: 27px;
     padding-bottom: 27px;
 
@@ -25,3 +25,6 @@
     text-transform: uppercase;     
     color: var(--light-text);
 }    
+.activity__card-img {
+    display: block;
+}
