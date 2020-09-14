@@ -3,12 +3,12 @@
     const headerBtn = document.querySelector('.top-menu-btn')
     const svgIcon = document.querySelector('.top-menu-btn use');
     let closeFlag = false;
-    console.log(svgIcon);
+    
     headerBtn.addEventListener('click', ()=>{
         console.log('click');
         closeFlag = !closeFlag;
         switchIcon();
-        headerNav.classList.toggle('header__content--sticky')
+        headerNav.classList.toggle('header__content--mobile')
     })
 
     function switchIcon(){
