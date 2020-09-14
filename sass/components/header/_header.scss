@@ -1,6 +1,6 @@
 .header {
     position: fixed;
-    z-index: 1000;
+    z-index: 1;
     top: 0px;
     width: 100%;
     min-height: 60px;
@@ -36,11 +36,14 @@
 
     @media screen and (min-width: $tablet){
         visibility:unset;
+        flex-direction: row;
         margin-left:88px;
+        position: static;
         display: flex;    
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        transform: translateY(0%);
     }
     @media screen and (min-width: $desktop){
         margin-left:94px;
@@ -63,6 +66,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        visibility: unset;
 
         position: static;
         width: 100%;

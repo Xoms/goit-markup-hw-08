@@ -26,6 +26,7 @@
   --nav-underline: #ECECEC;
   /*Портфолио рамка проекта #EEEEEE*/
   --item-border: #EEEEEE;
+  --overlay: rgba(47, 48, 58, 0.4);
 }
 
 /*Logo*/
@@ -572,7 +573,7 @@ a:hover {
 
 .header {
   position: fixed;
-  z-index: 1000;
+  z-index: 1;
   top: 0px;
   width: 100%;
   min-height: 60px;
@@ -629,7 +630,12 @@ a:hover {
 @media screen and (min-width: 768px) {
   .header__content {
     visibility: unset;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     margin-left: 88px;
+    position: static;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -640,6 +646,8 @@ a:hover {
         -ms-flex-pack: justify;
             justify-content: space-between;
     width: 100%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
@@ -673,6 +681,7 @@ a:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    visibility: unset;
     position: static;
     width: 100%;
     padding-top: 0;
@@ -687,7 +696,7 @@ a:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 1000;
+  z-index: 99;
 }
 
 .top-menu__contacts {
