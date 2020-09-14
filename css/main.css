@@ -1609,8 +1609,8 @@ main {
   position: absolute;
   top: 8px;
   right: 8px;
-  min-height: 30px;
-  min-width: 30px;
+  height: 30px;
+  width: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1635,9 +1635,8 @@ main {
 }
 
 .modal-form__icon-close {
-  height: 18px;
-  width: 18px;
   fill: currentColor;
+  display: block;
 }
 
 .modal-form__input-container {
