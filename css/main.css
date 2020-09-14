@@ -368,6 +368,7 @@ body {
   background-color: var(--main-bg);
   font-family: "Roboto-Bold", sans-serif;
   letter-spacing: 0.03em;
+  height: 100%;
   padding-top: 60px;
 }
 
@@ -1115,7 +1116,7 @@ a:hover {
 .activities__item-title {
   position: absolute;
   width: 100%;
-  bottom: 0;
+  bottom: 27px;
   padding-top: 27px;
   padding-bottom: 27px;
   background-color: var(--activity-title-bg);

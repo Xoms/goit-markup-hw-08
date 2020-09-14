@@ -368,6 +368,7 @@ body {
   background-color: var(--main-bg);
   font-family: "Roboto-Bold", sans-serif;
   letter-spacing: 0.03em;
+  height: 100%;
   padding-top: 60px;
 }
 
