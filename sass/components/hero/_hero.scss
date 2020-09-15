@@ -4,14 +4,6 @@
     width: 100%;
     display: flex;
     align-items: center;
-    background-image: 
-        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4),),
-        url(../images/hero/header-img.jpg);    
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    color: var(--light-text); 
-
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -22,14 +14,17 @@
             url("../images/hero/header-img@2x.jpg");
     }
 
-
-    @media screen and (min-width: $tablet) {        
-        background-image: 
+    background-image: 
         linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4),),
-            url(../images/hero/header-tablet-img.jpg);
+        url(../images/hero/header-img.jpg); 
+           
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    }
-    
+    color: var(--light-text); 
+
+   
+
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -39,14 +34,16 @@
             linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4),), 
             url("../images/hero/header-tablet-img@2x.jpg");
     }
-    
-    @media screen and (min-width: $desktop) {
-        padding-top: 0;
-        min-height: 600px;
+
+    @media screen and (min-width: $tablet) {        
         background-image: 
-            linear-gradient(rgba(47, 48, 58, 0.8)),
-            url(../images/hero/header-desktop-img.jpg);  
+        linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4),),
+            url(../images/hero/header-tablet-img.jpg);
+
     }
+    
+   
+    
     @media screen and (min-device-pixel-ratio: 2),
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx),
@@ -56,6 +53,15 @@
             linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4),), 
             url("../images/hero/header-desktop-img@2x.jpg");
     }
+
+    @media screen and (min-width: $desktop) {
+        padding-top: 0;
+        min-height: 600px;
+        background-image: 
+            linear-gradient(rgba(47, 48, 58, 0.4)),
+            url(../images/hero/header-desktop-img.jpg);  
+    }
+   
     
 }
 .hero__container {

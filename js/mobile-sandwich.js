@@ -15,8 +15,5 @@
         closeFlag ? svgIcon.setAttribute('href',"./images/sprite.svg#icon-mobile-menu-close") : 
             svgIcon.setAttribute('href',"./images/sprite.svg#icon-mobile-menu");
     }
-    // window.onresize(()=>{
-    //     (parseInt(document.body.clientWidth) >= 768) && 
-    //     headerNav.classList.remove('header__content--sticky');
-    // })
+    
 })()
